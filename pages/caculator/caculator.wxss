@@ -1,0 +1,98 @@
+/* pages/caculator/caculator.wxss */
+.container{
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.tvResultOfCaculate{
+  top: 3vh;
+  position: fixed;
+  right: 1%;
+}
+.tvResultOfCaculate-text{
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  font-size: 4em;
+}
+.caculator-keypad{
+  margin-top: 7vh;
+  font-size: 3.8em;
+  display: flex;
+}
+.input-keys{
+  width: 75%;
+  height: 100%;
+  padding-left: 15rpx;
+}
+
+.calculator-key-hover {
+  box-shadow: inset 0px 0px 25vw 0px rgba(0,0,0,0.25);
+}
+.function-keys{
+  display: flex;
+  justify-content: space-around;
+}
+.digit-keys{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  color: white;
+}
+.operator-keys{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:25%;
+  height: 100%;
+}
+
+.calculator-key {
+  display: block;
+  width: 25%;
+  height: 18vw;
+  line-height: 18vw;
+  margin: 2%;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.key-0{
+  width:57%;
+  height: 18vw;
+  line-height: 20vw;
+  border-radius: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.function-key{
+
+  background: linear-gradient(to bottom, rgba(202,202,204,1) 0%, rgba(196,194,204,1) 100%);
+}
+
+.digit-key{
+  background: rgba(238, 228, 218, 0.35);
+  color: white;
+}
+
+.operator-key{
+  display: block;
+  width: 18vw;
+  height: 18vw;
+  line-height: 18vw;
+  margin: 12rpx;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  box-sizing: border-box;
+  background:  linear-gradient(to bottom, rgba(252,156,23,1) 0%, rgba(247,126,27,1) 100%);
+}

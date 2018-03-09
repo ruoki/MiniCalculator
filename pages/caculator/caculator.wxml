@@ -1,0 +1,35 @@
+<!--pages/caculator/caculator.wxml-->
+<view class='container'>
+  <view class='tvResultOfCaculate'>
+    <text class='tvResultOfCaculate-text'>{{displayValue}}</text>
+  </view>
+  <view class='caculator-keypad'>
+    <view class='input-keys'>
+      <view class='function-keys' catchtap='onTapFunction'>
+        <button class='calculator-key function-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-clear'>AC</button>
+        <button class='calculator-key function-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-sign'>+/-</button>
+        <button class='calculator-key function-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-percent'>%</button>
+      </view>
+      <view class='digit-keys' catchtap='onTapDigit'>
+        <button class='calculator-key key-0 digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-0'>0</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-dot'>.</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-1'>1</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-2'>2</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-3'>3</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-4'>4</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-5'>5</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-6'>6</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-7'>7</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-8'>8</button>
+        <button class='calculator-key digit-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-9'>9</button>
+      </view>
+    </view>
+    <view class='operator-keys' catchtap='onTapOperator'>
+      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-divide'>÷</button>
+      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-multiply'>×</button>
+      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-subtract'>-</button>
+      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-add'>+</button>
+      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-equals'>=</button>
+    </view>
+  </view>
+</view>
