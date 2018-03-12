@@ -11,13 +11,19 @@
 .tvResultOfCaculate{
   top: 3vh;
   position: fixed;
-  right: 1%;
+  right: 5%;
 }
 .tvResultOfCaculate-text{
   font-weight: bold;
   color: white;
   text-align: right;
   font-size: 4em;
+}
+.tvResultOfCaculate-text_little{
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  font-size: 3.0em;
 }
 .caculator-keypad{
   margin-top: 7vh;
@@ -95,4 +101,17 @@
   color: white;
   box-sizing: border-box;
   background:  linear-gradient(to bottom, rgba(252,156,23,1) 0%, rgba(247,126,27,1) 100%);
+}
+.operator-key_checked{
+  display: block;
+  width: 18vw;
+  height: 18vw;
+  line-height: 18vw;
+  margin: 12rpx;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(252,156,23,1);
+  box-sizing: border-box;
+  background:  linear-gradient(to bottom, rgba(252,252,252,1) 0%, rgba(247,247,247,1) 100%);
 }

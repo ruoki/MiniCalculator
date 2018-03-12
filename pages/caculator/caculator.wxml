@@ -1,7 +1,7 @@
 <!--pages/caculator/caculator.wxml-->
 <view class='container'>
   <view class='tvResultOfCaculate'>
-    <text class='tvResultOfCaculate-text'>{{displayValue}}</text>
+    <text class='{{(displayValue.length > 7)?"tvResultOfCaculate-text_little":"tvResultOfCaculate-text"}}'>{{displayValue}}</text>
   </view>
   <view class='caculator-keypad'>
     <view class='input-keys'>
@@ -25,11 +25,11 @@
       </view>
     </view>
     <view class='operator-keys' catchtap='onTapOperator'>
-      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-divide'>÷</button>
-      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-multiply'>×</button>
-      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-subtract'>-</button>
-      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-add'>+</button>
-      <button class='calculator-key operator-key' hover-class='calculator-key-hover' hover-start-time="{{5}}" hover-stay-time="{{20}}" data-key='key-equals'>=</button>
+      <button class='{{operate == "key-divide"?"operator-key_checked":"operator-key"}}' data-key='key-divide'>÷</button>
+      <button class='{{operate == "key-multiply"?"operator-key_checked":"operator-key"}}' data-key='key-multiply'>×</button>
+      <button class='{{operate == "key-subtract"?"operator-key_checked":"operator-key"}}' data-key='key-subtract'>-</button>
+      <button class='{{operate == "key-add"?"operator-key_checked":"operator-key"}}' data-key='key-add'>+</button>
+      <button class='{{operate == "key-equals"?"operator-key_checked":"operator-key"}}' data-key='key-equals'>=</button>
     </view>
   </view>
 </view>

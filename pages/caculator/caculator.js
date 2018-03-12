@@ -112,7 +112,6 @@ Page({
       })
     }else if(this.data.operate){
       const currentValue = this.data.caculateResult || 0;
-      console.log("this.data.operate:"+this.data.operate)
       const newValue = this.calculatorOperations[this.data.operate](currentValue,inputValue);
       this.setData({
         caculateResult:newValue,
@@ -123,6 +122,7 @@ Page({
       waitingForOperate:true,
       operate:operator
     })
+    console.log("this.data.operate111111111111111:" + this.data.operate)
   },
 
   /**
